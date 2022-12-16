@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@300&family=Outfit:wght@200;300;400;500;600&family=Shadows+Into+Light&display=swap');
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-image: url(../imagens/1kgF.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding-top: 50px;
+  background-image: linear-gradient(rgba(169, 169, 169, 0.034), rgba(17, 34, 66, 0.274), rgba(169, 169, 169, 0.034));
+  padding: 15px;
+  margin-top: 5vh;
+  
+}
+
+.cabecalho .titulo {
+    color: rgb(255, 134, 53);
+}
+
+span{
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
+
+.titulo span.fade {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.titulo span.color{
+    transition: all 1s ease;
+    color: #f1ecff;
+
+}
+
+.cabecalho .logo {
+    width: 130px;
+    height: 70px;
+}
+
+.filmes-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 60px 0;
+}
+
+.lista-filme {
+    width: 310px;
+    height: 520px;
+    position: relative;
+}
+
+.btn-seta {
+    background-color: #FFF;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn-seta.btn-voltar {
+    transform: rotateY(180deg);
+}
+
+.btn-seta:hover {
+    background-color: #568cff;
+}
+
+.cartao {
+    opacity: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.cartao.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+.fundo-1 {
+    background: url(../imagens/fundo-card-1.png) no-repeat;
+}
+
+.fundo-2 {
+    background: url(../imagens/fundo-card-2.png) no-repeat;
+}
+
+.fundo-3 {
+    background: url(../imagens/fundo-card-3.png) no-repeat;
+}
+
+.fundo-4 {
+    background: url(../imagens/fundo-card-4.png) no-repeat;
+}
+
+.cartao .informacoes {
+    background-color: rgba(179, 177, 185, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.cartao .informacoes .nome {
+    color: #f1ecff;
+    font-size: 22px;
+}
+
+.cartao .informacoes .vida {
+    background-color: #333;
+    color: #f1ecff;
+    padding: 6px 10px;
+    border-radius: 20px;
+}
+
+.cartao .container-imagem {
+    text-align: center;
+}
+
+.cartao .imagem-filme {
+    max-width: 100%;
+    max-height: 280px;
+    padding: 20px;
+}
+
+.cartao .descricao {
+    background: rgba(255, 255, 255, 0.8);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cartao .descricao .titulo {
+    background-color: #333;
+    color: #f1ecff;
+    font-size: 15px;
+    padding: 12px;
+}
+
+.cartao .descricao .texto {
+    font-size: 14px;
+    padding: 12px;
+    text-align: justify;
+    max-height: 115px;
+    overflow-y: auto;
+}

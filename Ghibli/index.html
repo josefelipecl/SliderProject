@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Ghibli - favorite movies</title>
+
+    <link rel="shortcut icon" href="src/imagens/pokebola.png" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/estilos.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img src="src/imagens/ghibli-logo.png" alt="logo estudio ghibli" class="logo"/>
+      <h1 class="titulo " >Meus filmes favoritos -  Studio Ghibli</h1>
+    </header>
+
+    <main class="filmes-slider">
+      <button class="btn-seta btn-voltar" id="btn-voltar">
+        <img src="src/imagens/seta.png" alt="seta voltar" />
+      </button>
+
+      <ul class="lista-filme">
+        <li class="cartao fundo-1 selecionado">
+          <div class="informacoes">
+            <h2 class="nome">O Castelo Animado</h2>
+            <p class="vida">2004</p>
+          </div>
+
+          <div class="container-imagem">
+            <img src="src/imagens/gif-howl.gif" alt="Howl" class="imagem-filme"/>
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Sinopse</h3>
+            <p class="texto">Uma bruxa lança uma terrível maldição sobre a jovem Sophie, transformando-a numa velha de 90 anos. Desesperada, ela embarca numa odisseia na qual acaba parando no castelo animado, onde reside um misterioso feiticeiro chamado Howl que poderá ajudá-la a reverter o feitiço.</p>
+          </div>
+        </li>
+
+        <li class="cartao fundo-2 ">
+          <div class="informacoes">
+            <h2 class="nome">A Viagem de Chihiro</h2>
+            <p class="vida">2001</p>
+          </div>
+
+          <div class="container-imagem">
+            <img src="src/imagens/gif-chihiro.gif" alt="Chihiro" class="imagem-filme"/>
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Sinopse</h3>
+            <p class="texto">Chihiro é uma garota de 10 anos que descobre um mundo secreto de espíritos estranhos, criaturas e feitiçaria. Quando seus pais são misteriosamente transformados, ela deve recorrer à coragem que nunca soube que tinha para se libertar e devolver sua família ao mundo exterior.</p>
+          </div>
+        </li>
+
+        <li class="cartao fundo-3 ">
+          <div class="informacoes">
+            <h2 class="nome">O Serviço de Entregas da Kiki</h2>
+            <p class="vida">1989</p>
+          </div>
+
+          <div class="container-imagem">
+            <img src="src/imagens/gif-kiki.gif" alt="Kiki" class="imagem-filme"/>
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Sinopse</h3>
+            <p class="texto">Ao completar 13 anos, seguindo a tradição de todas as bruxas, Kiki deve se mudar para uma cidade na qual não haja nenhuma bruxa e passar lá um ano morando sozinha em uma espécie de “estágio”. Após achar uma bela cidade à beira mar, Kiki e seu gatinho Jiji tentam se adaptar à nova vida.</p>
+          </div>
+        </li>
+
+        <li class="cartao fundo-4 ">
+          <div class="informacoes">
+            <h2 class="nome">Meu Amigo Totoro</h2>
+            <p class="vida">1988</p>
+          </div>
+
+          <div class="container-imagem">
+            <img src="src/imagens/gif-totoro.gif" alt="Totoro" class="imagem-filme"/>
+          </div>
+
+          <div class="descricao">
+            <h3 class="titulo">Sinopse</h3>
+            <p class="texto">Duas meninas se mudam com o pai para o interior do Japão, com o objetivo de ficar perto da mãe, que está internada em um hospital. Lá, elas viverão muitas aventuras ao lado de um simpático espírito protetor da floresta chamado Totoro, que vive em uma canforeira gigante.</p>
+          </div>
+        </li>
+
+      </ul>
+
+      <button class="btn-seta btn-avancar" id="btn-avancar">
+        <img src="src/imagens/seta.png" alt="seta avançar" />
+      </button>
+
+    </main>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
